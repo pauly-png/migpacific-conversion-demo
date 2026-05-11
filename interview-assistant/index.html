@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>InterviewAI — Real-Time Answer Coach</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0a0f;
+      --surface: #13131a;
+      --surface2: #1c1c26;
+      --border: #2a2a3a;
+      --accent: #6c63ff;
+      --accent-dim: #4a44b5;
+      --accent-glow: rgba(108,99,255,0.25);
+      --green: #22c55e;
+      --red: #ef4444;
+      --amber: #f59e0b;
+      --text: #e8e8f0;
+      --text-dim: #888898;
+      --text-muted: #555568;
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      overscroll-behavior: none;
+    }
+
+    body { display: flex; flex-direction: column; min-height: 100dvh; }
+
+    /* ── Setup Screen ─────────────────────────────────────────────────── */
+    #setupScreen {
+      position: fixed; inset: 0; z-index: 200;
+      background: var(--bg);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 24px;
+      gap: 0;
+    }
+
+    .setup-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px 24px;
+      width: 100%; max-width: 420px;
+      display: flex; flex-direction: column; gap: 20px;
+    }
+
+    .setup-logo {
+      display: flex; flex-direction: column; align-items: center; gap: 12px;
+      text-align: center;
+    }
+
+    .setup-icon {
+      width: 64px; height: 64px;
+      background: linear-gradient(135deg, var(--accent), #9b5de5);
+      border-radius: 18px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 30px;
+    }
+
+    .setup-title { font-size: 22px; font-weight: 800; letter-spacing: -0.5px; }
+    .setup-title span { color: var(--accent); }
+    .setup-subtitle { font-size: 14px; color: var(--text-dim); line-height: 1.5; }
+
+    .setup-divider {
+      border: none; border-top: 1px solid var(--border);
+      margin: 0;
+    }
+
+    .field-group { display: flex; flex-direction: column; gap: 8px; }
+
+    .field-label {
+      font-size: 12px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.6px;
+      color: var(--text-dim);
+    }
+
+    .field-hint { font-size: 12px; color: var(--text-muted); line-height: 1.4; }
+
+    input[type=text], input[type=password] {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      color: var(--text);
+      font-size: 15px;
+      width: 100%; outline: none;
+      transition: border-color 0.2s;
+      -webkit-appearance: none;
+      font-family: monospace;
+    }
+    input:focus { border-color: var(--accent); }
+
+    .api-key-row {
+      display: flex; gap: 8px;
+    }
+    .api-key-row input { flex: 1; }
+
+    .toggle-btn {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--text-dim);
+      width: 46px; flex-shrink: 0;
+      cursor: pointer; font-size: 16px;
+      transition: all 0.2s;
+    }
+    .toggle-btn:hover { background: var(--border); color: var(--text); }
+
+    .primary-btn {
+      background: var(--accent);
+      color: white; border: none;
+      border-radius: 12px; padding: 14px;
+      font-size: 16px; font-weight: 700;
+      cursor: pointer; transition: background 0.2s;
+      width: 100%;
+    }
+    .primary-btn:hover { background: var(--accent-dim); }
+    .primary-btn:active { transform: scale(0.98); }
+
+    .setup-note {
+      display: flex; align-items: flex-start; gap: 8px;
+      background: rgba(108,99,255,0.08);
+      border: 1px solid rgba(108,99,255,0.2);
+      border-radius: 10px; padding: 12px;
+    }
+    .setup-note-icon { font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+    .setup-note-text { font-size: 12px; color: var(--text-dim); line-height: 1.5; }
+
+    /* ── Header ──────────────────────────────────────────────────────── */
+    header {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+      display: flex; align-items: center; justify-content: space-between;
+      flex-shrink: 0; gap: 12px;
+    }
+
+    .logo { display: flex; align-items: center; gap: 10px; }
+
+    .logo-icon {
+      width: 32px; height: 32px;
+      background: linear-gradient(135deg, var(--accent), #9b5de5);
+      border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 15px;
+    }
+
+    .logo-text { font-size: 17px; font-weight: 800; letter-spacing: -0.3px; }
+    .logo-text span { color: var(--accent); }
+
+    .header-actions { display: flex; gap: 8px; }
+
+    .icon-btn {
+      background: none; border: 1px solid var(--border);
+      color: var(--text-dim);
+      width: 34px; height: 34px; border-radius: 8px;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      font-size: 15px; transition: all 0.2s;
+    }
+    .icon-btn:hover { background: var(--surface2); color: var(--text); }
+
+    /* ── Settings Drawer ─────────────────────────────────────────────── */
+    .settings-panel {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 18px;
+      display: none; flex-direction: column; gap: 14px;
+    }
+    .settings-panel.open { display: flex; }
+
+    .settings-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+    .field-group-sm { display: flex; flex-direction: column; gap: 6px; }
+    .field-label-sm {
+      font-size: 11px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.5px;
+      color: var(--text-muted);
+    }
+
+    input.sm {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px; padding: 9px 11px;
+      color: var(--text); font-size: 14px;
+      width: 100%; outline: none;
+      transition: border-color 0.2s;
+      -webkit-appearance: none;
+      font-family: inherit;
+    }
+    input.sm:focus { border-color: var(--accent); }
+
+    .save-btn {
+      background: var(--accent); color: white; border: none;
+      border-radius: 8px; padding: 10px;
+      font-size: 14px; font-weight: 600;
+      cursor: pointer; transition: background 0.2s;
+    }
+    .save-btn:hover { background: var(--accent-dim); }
+
+    /* ── Main ─────────────────────────────────────────────────────────── */
+    main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+    .scroll-area {
+      flex: 1; overflow-y: auto;
+      padding: 16px 18px;
+      display: flex; flex-direction: column; gap: 14px;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    /* ── Cards ───────────────────────────────────────────────────────── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px; padding: 14px;
+    }
+
+    .card-label {
+      font-size: 11px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.7px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      display: flex; align-items: center; gap: 6px;
+    }
+
+    .live-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--red); display: none;
+    }
+    .listening .live-dot { display: block; animation: pulse 1s infinite; }
+
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+    .transcript-text {
+      font-size: 16px; line-height: 1.6;
+      color: var(--text-dim); min-height: 48px;
+    }
+    .transcript-text .final { color: var(--text); }
+    .transcript-text .interim { color: var(--text-muted); font-style: italic; }
+    .placeholder { color: var(--text-muted); font-style: italic; font-size: 15px; }
+
+    .card-actions {
+      display: flex; justify-content: flex-end; gap: 8px;
+      margin-top: 12px;
+    }
+
+    .chip-btn {
+      background: var(--surface2); border: 1px solid var(--border);
+      color: var(--text-dim); border-radius: 20px;
+      padding: 6px 13px; font-size: 12px; font-weight: 600;
+      cursor: pointer; transition: all 0.2s;
+    }
+    .chip-btn:hover { background: var(--border); color: var(--text); }
+    .chip-btn.primary {
+      background: var(--accent-glow);
+      border-color: var(--accent); color: var(--accent);
+    }
+    .chip-btn.primary:hover { background: var(--accent); color: white; }
+
+    .answer-text {
+      font-size: 16px; line-height: 1.75;
+      color: var(--text); white-space: pre-wrap;
+      word-break: break-word; min-height: 48px;
+    }
+
+    .cursor {
+      display: inline-block; width: 2px; height: 18px;
+      background: var(--accent); margin-left: 2px;
+      vertical-align: text-bottom;
+      animation: blink 0.7s infinite;
+    }
+    @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
+
+    /* ── Bottom bar ──────────────────────────────────────────────────── */
+    .bottom-bar {
+      padding: 14px 18px;
+      padding-bottom: calc(14px + env(safe-area-inset-bottom));
+      border-top: 1px solid var(--border);
+      background: var(--surface); flex-shrink: 0;
+    }
+
+    .status-bar {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      margin-bottom: 12px; min-height: 18px;
+    }
+
+    .status-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: var(--text-muted);
+    }
+    .status-dot.ready { background: var(--text-muted); }
+    .status-dot.active { background: var(--green); animation: pulse 1s infinite; }
+    .status-dot.processing { background: var(--accent); animation: pulse 0.6s infinite; }
+    .status-dot.error { background: var(--red); }
+
+    .status-text { font-size: 13px; color: var(--text-muted); }
+
+    .mic-btn {
+      width: 100%; height: 62px;
+      border-radius: 15px; border: none;
+      font-size: 16px; font-weight: 700;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      transition: all 0.2s; letter-spacing: 0.1px;
+    }
+
+    .mic-btn.idle {
+      background: var(--accent); color: white;
+    }
+    .mic-btn.idle:active { transform: scale(0.97); }
+
+    .mic-btn.listening {
+      background: var(--red); color: white;
+      animation: glow 1.5s infinite;
+    }
+    @keyframes glow {
+      0%,100% { box-shadow: 0 0 0 0 rgba(239,68,68,0.4); }
+      50% { box-shadow: 0 0 0 10px rgba(239,68,68,0); }
+    }
+
+    .mic-btn.processing {
+      background: var(--surface2); color: var(--text-muted);
+      cursor: not-allowed;
+    }
+
+    .mic-icon { font-size: 20px; }
+
+    .waveform {
+      display: none; align-items: center; gap: 3px; height: 22px;
+    }
+    .listening .waveform { display: flex; }
+    .wave-bar {
+      width: 3px; border-radius: 3px;
+      background: rgba(255,255,255,0.85);
+      animation: wave 0.8s ease-in-out infinite;
+    }
+    .wave-bar:nth-child(1) { animation-delay: 0s; }
+    .wave-bar:nth-child(2) { animation-delay: 0.12s; }
+    .wave-bar:nth-child(3) { animation-delay: 0.24s; }
+    .wave-bar:nth-child(4) { animation-delay: 0.12s; }
+    .wave-bar:nth-child(5) { animation-delay: 0s; }
+    @keyframes wave { 0%,100% { height: 5px; } 50% { height: 20px; } }
+
+    /* ── History ─────────────────────────────────────────────────────── */
+    .section-label {
+      font-size: 11px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.7px;
+      color: var(--text-muted); padding: 0 2px;
+    }
+
+    .history-item {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; overflow: hidden;
+    }
+
+    .history-q {
+      padding: 10px 13px;
+      font-size: 13px; color: var(--text-dim);
+      border-bottom: 1px solid var(--border);
+      font-style: italic;
+    }
+
+    .history-a {
+      padding: 10px 13px; font-size: 13px;
+      color: var(--text); line-height: 1.55;
+      max-height: 100px; overflow: hidden;
+      position: relative;
+    }
+    .history-a::after {
+      content: ''; position: absolute;
+      bottom: 0; left: 0; right: 0; height: 36px;
+      background: linear-gradient(transparent, var(--surface));
+    }
+
+    /* ── No-support banner ───────────────────────────────────────────── */
+    .banner {
+      margin: 0; border-radius: 10px; padding: 13px;
+      font-size: 13px; line-height: 1.5; display: none;
+    }
+    .banner.warn {
+      background: rgba(245,158,11,0.1);
+      border: 1px solid rgba(245,158,11,0.3);
+      color: #fbbf24;
+    }
+
+    /* ── Toast ───────────────────────────────────────────────────────── */
+    .toast {
+      position: fixed; bottom: 90px; left: 50%;
+      transform: translateX(-50%) translateY(16px);
+      background: #2a2a3a; color: var(--text);
+      padding: 10px 18px; border-radius: 24px;
+      font-size: 13px; font-weight: 500;
+      opacity: 0; transition: all 0.25s;
+      pointer-events: none; white-space: nowrap; z-index: 100;
+    }
+    .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  </style>
+</head>
+<body>
+
+<!-- ══ Setup Screen ═══════════════════════════════════════════════════ -->
+<div id="setupScreen">
+  <div class="setup-card">
+    <div class="setup-logo">
+      <div class="setup-icon">🎯</div>
+      <div>
+        <div class="setup-title">Interview<span>AI</span></div>
+        <div class="setup-subtitle">Real-time interview coaching via your microphone.</div>
+      </div>
+    </div>
+
+    <hr class="setup-divider" />
+
+    <div class="field-group">
+      <div class="field-label">Anthropic API Key</div>
+      <div class="api-key-row">
+        <input type="password" id="apiKeyInput" placeholder="sk-ant-..." autocomplete="off" spellcheck="false" />
+        <button class="toggle-btn" id="toggleKey" title="Show/hide key">👁</button>
+      </div>
+      <div class="field-hint">Get your key at console.anthropic.com &rarr; API Keys. Stored only in your browser.</div>
+    </div>
+
+    <div class="setup-note">
+      <div class="setup-note-icon">🔒</div>
+      <div class="setup-note-text">Your API key never leaves your device. It's saved in localStorage and used to call Anthropic directly from your browser. No server involved.</div>
+    </div>
+
+    <button class="primary-btn" id="startBtn">Get Started &rarr;</button>
+  </div>
+</div>
+
+<!-- ══ App ════════════════════════════════════════════════════════════ -->
+<header>
+  <div class="logo">
+    <div class="logo-icon">🎯</div>
+    <div class="logo-text">Interview<span>AI</span></div>
+  </div>
+  <div class="header-actions">
+    <button class="icon-btn" id="settingsToggle" title="Settings">⚙️</button>
+    <button class="icon-btn" id="changeKeyBtn" title="Change API key">🔑</button>
+  </div>
+</header>
+
+<div class="settings-panel" id="settingsPanel">
+  <div class="settings-row">
+    <div class="field-group-sm">
+      <div class="field-label-sm">Job Role</div>
+      <input class="sm" type="text" id="jobRole" placeholder="e.g. Software Engineer" />
+    </div>
+    <div class="field-group-sm">
+      <div class="field-label-sm">Company / Context</div>
+      <input class="sm" type="text" id="jobContext" placeholder="e.g. startup, fintech" />
+    </div>
+  </div>
+  <div class="field-group-sm" style="max-width:160px">
+    <div class="field-label-sm">Silence timeout (sec)</div>
+    <input class="sm" type="text" id="silenceTimeout" placeholder="2.5" />
+  </div>
+  <button class="save-btn" id="saveSettings">Save</button>
+</div>
+
+<main>
+  <div class="scroll-area" id="scrollArea">
+
+    <div class="banner warn" id="noSupportBanner">
+      Your browser doesn't support the Web Speech API. Use <strong>Chrome on Android</strong> or Chrome/Edge on desktop for microphone support.
+    </div>
+
+    <!-- Transcript card -->
+    <div class="card" id="transcriptCard">
+      <div class="card-label">
+        <div class="live-dot"></div>
+        <span id="transcriptCardLabel">Question heard</span>
+      </div>
+      <div class="transcript-text" id="transcriptText">
+        <span class="placeholder">Tap the mic and speak the interview question you just heard&hellip;</span>
+      </div>
+      <div class="card-actions" id="transcriptActions" style="display:none">
+        <button class="chip-btn" id="clearTranscriptBtn">Clear</button>
+        <button class="chip-btn primary" id="submitBtn">Get Answer ✨</button>
+      </div>
+    </div>
+
+    <!-- Answer card -->
+    <div class="card" id="answerCard">
+      <div class="card-label">💡 Suggested Answer</div>
+      <div class="answer-text" id="answerText">
+        <span class="placeholder">Your AI-generated answer will stream here in real time&hellip;</span>
+      </div>
+      <div class="card-actions" id="answerActions" style="display:none">
+        <button class="chip-btn" id="copyBtn">Copy</button>
+        <button class="chip-btn" id="newQuestionBtn">New Question</button>
+      </div>
+    </div>
+
+    <!-- History -->
+    <div id="historySection" style="display:none">
+      <div class="section-label">Recent Q&amp;As</div>
+      <div id="historyList" style="display:flex;flex-direction:column;gap:10px;margin-top:8px"></div>
+    </div>
+
+  </div>
+</main>
+
+<div class="bottom-bar">
+  <div class="status-bar">
+    <div class="status-dot" id="statusDot"></div>
+    <div class="status-text" id="statusText">Ready &mdash; tap mic to begin</div>
+  </div>
+  <button class="mic-btn idle" id="micBtn">
+    <span class="mic-icon">🎤</span>
+    <span id="micLabel">Start Listening</span>
+    <div class="waveform">
+      <div class="wave-bar"></div>
+      <div class="wave-bar"></div>
+      <div class="wave-bar"></div>
+      <div class="wave-bar"></div>
+      <div class="wave-bar"></div>
+    </div>
+  </button>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ── Constants ────────────────────────────────────────────────────────────
+const SYSTEM_PROMPT = `You are an expert interview coach. When the user tells you an interview question they just heard, provide a concise, confident, well-structured verbal answer.
+
+Guidelines:
+- Keep answers under 90 seconds when spoken aloud (~220 words max)
+- Use the STAR method (Situation, Task, Action, Result) for behavioral questions
+- For technical questions, explain clearly and concisely
+- Start with a direct answer, then elaborate
+- Be natural and conversational — this will be spoken aloud, not read
+- End with a confident closing sentence
+- If the question seems incomplete, answer the most likely intended version
+
+Format: plain flowing prose only. No bullet points, headers, or markdown. Write exactly as the candidate should say it.`;
+
+// ── State ────────────────────────────────────────────────────────────────
+let apiKey = '';
+let recognition = null;
+let isListening = false;
+let isProcessing = false;
+let finalTranscript = '';
+let interimTranscript = '';
+let silenceTimer = null;
+let history = [];
+
+// ── Helpers ──────────────────────────────────────────────────────────────
+function esc(str) {
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function scrollBottom() {
+  const el = document.getElementById('scrollArea');
+  el.scrollTop = el.scrollHeight;
+}
+
+let toastTimer;
+function toast(msg, duration = 2500) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove('show'), duration);
+}
+
+// ── Settings ─────────────────────────────────────────────────────────────
+function loadSettings() {
+  const s = JSON.parse(localStorage.getItem('ia_settings') || '{}');
+  document.getElementById('jobRole').value = s.jobRole || '';
+  document.getElementById('jobContext').value = s.jobContext || '';
+  document.getElementById('silenceTimeout').value = s.silenceTimeout || '2.5';
+}
+
+function getSettings() {
+  return JSON.parse(localStorage.getItem('ia_settings') || '{}');
+}
+
+document.getElementById('saveSettings').addEventListener('click', () => {
+  const s = {
+    jobRole: document.getElementById('jobRole').value.trim(),
+    jobContext: document.getElementById('jobContext').value.trim(),
+    silenceTimeout: document.getElementById('silenceTimeout').value || '2.5',
+  };
+  localStorage.setItem('ia_settings', JSON.stringify(s));
+  document.getElementById('settingsPanel').classList.remove('open');
+  toast('Settings saved');
+});
+
+document.getElementById('settingsToggle').addEventListener('click', () => {
+  document.getElementById('settingsPanel').classList.toggle('open');
+});
+
+document.getElementById('changeKeyBtn').addEventListener('click', () => {
+  document.getElementById('setupScreen').style.display = 'flex';
+  document.getElementById('apiKeyInput').value = '';
+});
+
+// ── Setup Screen ─────────────────────────────────────────────────────────
+document.getElementById('toggleKey').addEventListener('click', () => {
+  const inp = document.getElementById('apiKeyInput');
+  inp.type = inp.type === 'password' ? 'text' : 'password';
+});
+
+document.getElementById('startBtn').addEventListener('click', () => {
+  const key = document.getElementById('apiKeyInput').value.trim();
+  if (!key.startsWith('sk-ant-') && !key.startsWith('sk-')) {
+    toast('Please enter a valid Anthropic API key (starts with sk-ant-)');
+    return;
+  }
+  apiKey = key;
+  localStorage.setItem('ia_key', key);
+  document.getElementById('setupScreen').style.display = 'none';
+});
+
+function initApp() {
+  const stored = localStorage.getItem('ia_key');
+  if (stored) {
+    apiKey = stored;
+    document.getElementById('setupScreen').style.display = 'none';
+  }
+  loadSettings();
+  initSpeech();
+}
+
+// ── Speech Recognition ───────────────────────────────────────────────────
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+function initSpeech() {
+  if (!SpeechRecognition) {
+    document.getElementById('noSupportBanner').style.display = 'block';
+    document.getElementById('micBtn').disabled = true;
+    document.getElementById('micBtn').style.opacity = '0.4';
+    return;
+  }
+
+  recognition = new SpeechRecognition();
+  recognition.continuous = true;
+  recognition.interimResults = true;
+  recognition.lang = 'en-US';
+
+  recognition.onresult = (e) => {
+    interimTranscript = '';
+    for (let i = e.resultIndex; i < e.results.length; i++) {
+      const r = e.results[i];
+      if (r.isFinal) finalTranscript += r[0].transcript + ' ';
+      else interimTranscript += r[0].transcript;
+    }
+    renderTranscript();
+    resetSilenceTimer();
+  };
+
+  recognition.onerror = (e) => {
+    if (e.error === 'no-speech' || e.error === 'aborted') return;
+    toast('Mic error: ' + e.error);
+    stopListening();
+  };
+
+  // Auto-restart on mobile (Chrome on Android stops after ~60s)
+  recognition.onend = () => {
+    if (isListening) {
+      try { recognition.start(); } catch(_) {}
+    }
+  };
+}
+
+function startListening() {
+  if (!recognition) return;
+  isListening = true;
+  finalTranscript = '';
+  interimTranscript = '';
+  renderTranscript();
+  try { recognition.start(); } catch(_) {}
+  setUIState('listening');
+}
+
+function stopListening() {
+  isListening = false;
+  clearTimeout(silenceTimer);
+  if (recognition) try { recognition.stop(); } catch(_) {}
+  setUIState('idle');
+}
+
+function resetSilenceTimer() {
+  clearTimeout(silenceTimer);
+  const ms = (parseFloat(getSettings().silenceTimeout) || 2.5) * 1000;
+  silenceTimer = setTimeout(() => {
+    if (isListening && finalTranscript.trim().length > 3) {
+      stopListening();
+      submitQuestion(finalTranscript.trim());
+    }
+  }, ms);
+}
+
+// ── UI State ─────────────────────────────────────────────────────────────
+function setUIState(state) {
+  const btn = document.getElementById('micBtn');
+  const label = document.getElementById('micLabel');
+  const dot = document.getElementById('statusDot');
+  const statusText = document.getElementById('statusText');
+  const card = document.getElementById('transcriptCard');
+  const cardLabel = document.getElementById('transcriptCardLabel');
+
+  btn.className = 'mic-btn ' + state;
+  card.className = 'card' + (state === 'listening' ? ' listening' : '');
+
+  if (state === 'listening') {
+    label.textContent = 'Tap to Stop';
+    dot.className = 'status-dot active';
+    statusText.textContent = 'Listening — speak the question you heard';
+    cardLabel.textContent = 'Listening...';
+  } else if (state === 'processing') {
+    label.textContent = 'Processing...';
+    dot.className = 'status-dot processing';
+    statusText.textContent = 'Getting your answer from Claude...';
+    cardLabel.textContent = 'Question heard';
+  } else {
+    label.textContent = 'Start Listening';
+    dot.className = 'status-dot ready';
+    statusText.textContent = 'Ready — tap mic to begin';
+    cardLabel.textContent = 'Question heard';
+  }
+}
+
+function renderTranscript() {
+  const el = document.getElementById('transcriptText');
+  const actions = document.getElementById('transcriptActions');
+
+  if (!finalTranscript && !interimTranscript) {
+    el.innerHTML = '<span class="placeholder">Tap the mic and speak the interview question you just heard&hellip;</span>';
+    actions.style.display = 'none';
+    return;
+  }
+
+  el.innerHTML =
+    (finalTranscript ? `<span class="final">${esc(finalTranscript)}</span>` : '') +
+    (interimTranscript ? `<span class="interim">${esc(interimTranscript)}</span>` : '');
+  actions.style.display = finalTranscript.trim().length > 0 ? 'flex' : 'none';
+  scrollBottom();
+}
+
+// ── Mic button ───────────────────────────────────────────────────────────
+document.getElementById('micBtn').addEventListener('click', () => {
+  if (isProcessing) return;
+  if (isListening) {
+    stopListening();
+    if (finalTranscript.trim().length > 3) submitQuestion(finalTranscript.trim());
+  } else {
+    startListening();
+  }
+});
+
+document.getElementById('submitBtn').addEventListener('click', () => {
+  const q = finalTranscript.trim();
+  if (q.length > 3) submitQuestion(q);
+});
+
+// ── API Call ─────────────────────────────────────────────────────────────
+async function submitQuestion(question) {
+  if (isProcessing) return;
+  isProcessing = true;
+  setUIState('processing');
+
+  const settings = getSettings();
+  const answerEl = document.getElementById('answerText');
+  const actionsEl = document.getElementById('answerActions');
+
+  answerEl.innerHTML = '<span class="cursor"></span>';
+  actionsEl.style.display = 'none';
+  scrollBottom();
+
+  const contextLine = settings.jobRole
+    ? `The candidate is interviewing for: ${settings.jobRole}${settings.jobContext ? '. Context: ' + settings.jobContext : ''}.\n\n`
+    : '';
+
+  let fullAnswer = '';
+
+  try {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'x-api-key': apiKey,
+        'anthropic-version': '2023-06-01',
+        'content-type': 'application/json',
+        'anthropic-dangerous-allow-browser': 'true',
+      },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-6',
+        max_tokens: 512,
+        stream: true,
+        system: SYSTEM_PROMPT,
+        messages: [{
+          role: 'user',
+          content: `${contextLine}Interview question: "${question}"`
+        }],
+      }),
+    });
+
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.error?.message || `HTTP ${res.status}`);
+    }
+
+    const reader = res.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = '';
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split('\n');
+      buffer = lines.pop();
+
+      for (const line of lines) {
+        if (!line.startsWith('data: ')) continue;
+        const data = line.slice(6).trim();
+        if (data === '[DONE]') break;
+        try {
+          const ev = JSON.parse(data);
+          if (ev.type === 'content_block_delta' && ev.delta?.type === 'text_delta') {
+            fullAnswer += ev.delta.text;
+            answerEl.innerHTML = esc(fullAnswer) + '<span class="cursor"></span>';
+            scrollBottom();
+          }
+        } catch(_) {}
+      }
+    }
+
+    answerEl.innerHTML = esc(fullAnswer);
+    actionsEl.style.display = 'flex';
+
+    if (fullAnswer) {
+      history.unshift({ q: question, a: fullAnswer });
+      if (history.length > 8) history.pop();
+      renderHistory();
+    }
+
+  } catch (err) {
+    answerEl.innerHTML = `<span style="color:var(--red)">Error: ${esc(err.message)}</span>`;
+    toast('Failed — check your API key in settings');
+  }
+
+  isProcessing = false;
+  setUIState('idle');
+  scrollBottom();
+}
+
+// ── Answer actions ───────────────────────────────────────────────────────
+document.getElementById('copyBtn').addEventListener('click', () => {
+  const text = document.getElementById('answerText').innerText;
+  navigator.clipboard.writeText(text).then(() => toast('Copied to clipboard ✓'));
+});
+
+document.getElementById('newQuestionBtn').addEventListener('click', () => {
+  finalTranscript = '';
+  interimTranscript = '';
+  renderTranscript();
+  document.getElementById('answerText').innerHTML = '<span class="placeholder">Your AI-generated answer will stream here in real time&hellip;</span>';
+  document.getElementById('answerActions').style.display = 'none';
+  if (isListening) stopListening();
+});
+
+document.getElementById('clearTranscriptBtn').addEventListener('click', () => {
+  finalTranscript = '';
+  interimTranscript = '';
+  renderTranscript();
+  if (isListening) stopListening();
+});
+
+// ── History ──────────────────────────────────────────────────────────────
+function renderHistory() {
+  const section = document.getElementById('historySection');
+  const list = document.getElementById('historyList');
+  if (!history.length) { section.style.display = 'none'; return; }
+  section.style.display = 'block';
+  list.innerHTML = history.map(item => `
+    <div class="history-item">
+      <div class="history-q">${esc(item.q)}</div>
+      <div class="history-a">${esc(item.a)}</div>
+    </div>
+  `).join('');
+}
+
+// ── Boot ─────────────────────────────────────────────────────────────────
+initApp();
+</script>
+</body>
+</html>
