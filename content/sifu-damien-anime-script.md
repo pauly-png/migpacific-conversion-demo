@@ -1,267 +1,348 @@
 # FOREVER CHAPTER — SIFU DAMIEN
-### An Anime Origin Story
+### "The Boy From the Island"
 **Runtime: 5 minutes | Format: Cinematic Anime Short**
-**Based on the life of Sifu Damien Chauremootoo — Empower Tactical, Melbourne**
+**Empower Tactical Melbourne**
 
 ---
 
-> *Research sources: Empower Tactical website, Black Belt Magazine, Le Mauricien (French interviews), eWingChun lineage records, Berwick Star News, QNews Australia, Star Observer, YouTube channel research.*
+> *Primary source: Sifu Damien Chauremootoo's own words, Facebook video testimonial (facebook.com/share/v/18XrSUoJEg). Supporting research: Black Belt Magazine, Le Mauricien, eWingChun lineage records, Berwick Star News.*
 
 ---
 
-## THEME ANALYSIS — KEY CONTENT THREADS
+## THEME ANALYSIS
 
-Before the script, here is the full analysis of Sifu Damien's story, themes, and top content moments drawn from all available sources.
+### Key Themes — Ranked by Emotional Power
 
----
+| Theme | Sifu Damien's Own Words |
+|-------|------------------------|
+| **The Saturday ritual** | *"My dad would come home every Saturday afternoon with a stack of VHS cassettes... my mom would say I would not move for a flight."* |
+| **The cool kid** | *"I wanted to do something and get the attention of everyone and be the cool kid."* — the honest, human reason behind the dream |
+| **The impossible island** | *"Being from Mauritius and willing to be a great martial artist, I knew it was going to be impossible."* |
+| **The dark years** | Call centres. Telstra. The gap between the dream and reality — the part nobody talks about |
+| **The network** | Education + people = the path. William Cheung found through community, not destiny |
+| **The "now what" moment** | *"Upon my return from the Shaolin Temple I remember coming back thinking — now what?"* The highest point becoming the emptiest |
+| **The boys** | *"I want to do this for my kids. I want to do this for my boys."* The pivot from personal achievement to legacy |
+| **The rocket** | *"Like a rocket going to space — the boosters help it, then fall away so the rocket can make it."* Every job, every hardship, every person — all of it was fuel |
+| **Empower** | *"I want Empower Tactical to be the place of opportunities for everyone that's dreaming or having a vision to be someone."* |
 
-### TOP 5 IDENTIFIED YOUTUBE VIDEOS / CONTENT PILLARS
+### Most Powerful Story Beats
 
-Based on channel research (UCZt_IcbivEIy3jYZos4vhCg) and cross-platform references:
+1. **Saturday afternoon VHS** — visceral, universal, cinematic
+2. **The impossible island** — the moment a dream confronts reality
+3. **The call centre years** — the grind nobody romanticises. This is where characters are made
+4. **Grand Master William Cheung** — *"There we go. We're getting somewhere."*
+5. **The Shaolin Temple plaque** — peak achievement. Followed immediately by emptiness
+6. **"Now what?"** — the real turning point of his life. More dramatic than any victory
+7. **For my boys** — the moment selfishness becomes legacy
+8. **The rocket** — his own metaphor. Perfect for anime visual language
 
-1. **Empower Tactical Online Course Promo** (`Nmi4A-shl1w`)
-   — Promotional video introducing Sifu Damien's global online Wing Chun curriculum through Black Belt Magazine. Core message: *"The art that changed my life — now available to the world."*
-
-2. **Damien's 10th Level Red Boat Wing Chun Grading Highlights — Dec 2017** (`XuNnXHO-6Mo`)
-   — Documentary-style grading footage marking a pivotal milestone in his lineage journey under Grand Master William Cheung. Represents 10 years of sacrifice made visible.
-
-3. **Empower 2021–2022 Highlight Video** (`mMjZzWDSO1s`)
-   — Year-in-review of Empower Tactical Melbourne: students transforming, women gaining confidence, community programs. The "why" behind the school.
-
-4. **Wing Chun Is a System Developed by a Woman (Ng Mui)** — Facebook/YouTube crosspost
-   — Sifu Damien teaching the origin of Wing Chun itself: born from a *woman's* ingenuity, not brute force. Philosophical and powerful. Reframes martial arts as intelligence over aggression.
-
-5. **Empower Tactical Podcast Series** (Episodes with Andrew Cheung, Bey Logan, Eric Oram)
-   — Long-form conversations exploring lineage, Bruce Lee's cultural legacy, acting/martial arts crossover, and the responsibility of carrying a tradition forward.
-
----
-
-### KEY THEMES
-
-| Theme | Evidence |
-|-------|----------|
-| **The Boy Who Dreamed** | Age 9, Curepipe Mauritius — father's VHS tapes of Bruce Lee lit the fire |
-| **The Long Road** | 8 years old: karate → 6 years aikido → kickboxing → immigration → Wing Chun → 10 years under William Cheung |
-| **Lineage as Sacred Duty** | Ip Man → William Cheung → Joe Sayah → Damien. The chain must not break. |
-| **The Island That Couldn't Hold Him** | First Mauritian Wing Chun instructor in history. Left home to become something no one from his country had ever been. |
-| **The Shaolin Moment** | Name engraved on a plaque at Shaolin Temple in Henan, China — alongside Robert Downey Jr. and Grand Master William Cheung. Not just a student. A keeper of the tradition. |
-| **Power Given Away** | Empower Tactical: teaching women, disabled youth, LGBTQ community, children — because true mastery means building others up |
-| **Eliminating Self-Doubt** | *"His passion is to eliminate self-doubt barriers, turn hopelessness into hopefulness, strengthen self-belief and allow students to reach their own limits — then break them."* |
-
----
-
-### MOST MEMORABLE STORY MOMENTS (for script adaptation)
-
-1. **The VHS Tape Night** — Young Damien watching Bruce Lee for the first time, a film his father brought home. The flicker of the screen. The way Bruce moved. The impossible becoming imaginable.
-2. **Leaving the Island** — A young man with a bag and a dream, boarding a plane from Mauritius to Melbourne. No lineage waiting for him. No master expecting him. Just hunger.
-3. **First Contact with Wing Chun** — The moment Wing Chun *felt different* from everything he'd trained before. Not aggression — geometry. Not muscle — structure.
-4. **The Grading** — 10th Level Red Boat. A decade of sacrifice made real in a single moment.
-5. **The Plaque** — Standing in Henan Province, China, reading his own name alongside William Cheung and Robert Downey Jr. A boy from Curepipe. On a wall in the Shaolin Temple.
-6. **The First Vulnerable Student** — Teaching a woman or a child who had never believed they could defend themselves — and watching that belief change in front of him.
+### People in the Video (Testimonials)
+- **Richard Norton** — martial artist, actor, fight coordinator. *"Nothing's a problem. We always go forward."*
+- **Chris Palovanis** — CEO, Football Victoria. Had a heart attack at 31; couldn't enter a sauna for years. Sifu Damien helped him conquer that fear. *"It's not about going into the sauna. It's about that mindset."*
+- **Dan Deltondo (Dan Deltz)** — brings celebrities to Australia. *"Damien's first answer is: of course we can do it. Let's work out how."*
+- **Mark Wong** — CEO, Museum of Chinese Australian History, Melbourne
+- **Violetta Baggier** — writer, South East Melbourne
+- **His partner** — *"I inspire and empower women all over the world for a living and Sifu Damien inspires and empowers me every single day. I'm very blessed to call him the love of my life."*
 
 ---
 
 ## THE ANIME SCRIPT
 
----
-
 ```
 FOREVER CHAPTER
 "THE BOY FROM THE ISLAND"
-An Origin Story of Sifu Damien Chauremootoo
 
-Written for: Empower Tactical Melbourne
-Format: 5-Minute Anime Short
+An Origin Story — Sifu Damien Chauremootoo
+Empower Tactical Melbourne
+
+Runtime: 5:00
 Style: Cinematic anime (Demon Slayer / Vinland Saga aesthetic)
+Narration: Sifu Damien's own voice throughout
 ```
 
 ---
 
-### COLD OPEN — 00:00–00:15
+### COLD OPEN — 00:00–00:20
 
-**[VISUAL: Black screen. The sound of ocean waves. Then — a single light, flickering. A television screen.]**
+**[VISUAL: Black. Silence. Then — the click and whir of a VHS tape loading.]**
 
-**[VISUAL: Extreme close-up. A child's eyes. Wide. Unblinking. Reflecting the glow of a screen.]**
+**[VISUAL: A television screen flickers to life. Bars of colour. Then: Bruce Lee, moving like nobody has ever moved before.]**
 
-**NARRATOR (V.O.)**
-*(deep, measured — Sifu Damien's own voice, older, wiser)*
-Every warrior has a moment.
+**SIFU DAMIEN (V.O.)**
+*(calm, reflective — the voice of a man looking back)*
+My name is Sifu Damien.
 
-**[VISUAL: Pull back to reveal — a small living room in Curepipe, Mauritius, 1990s. The volcanic mountains of the island visible through a louvred window. A VHS tape plays on an old television. On the screen: Bruce Lee moves like water and lightning simultaneously.]**
+**[VISUAL: Pull back slowly to reveal a child's face — lit only by the television screen. Eyes wide. Unblinking. Completely still.]**
 
-**NARRATOR (V.O.)**
-Not a moment of victory. Not a moment of training.
-A moment of *seeing* — for the very first time —
-what a human being could become.
-
-**[VISUAL: Young DAMIEN, 9 years old, sits cross-legged on the floor. His father's hand rests briefly on his shoulder before leaving the room. The boy does not look away from the screen.]**
+**SIFU DAMIEN (V.O.)**
+And I was born in a tiny little island
+in the middle of the Indian Ocean.
+Called Mauritius.
 
 ---
 
-### ACT ONE: THE ISLAND — 00:15–01:10
+### ACT ONE: SATURDAY — 00:20–01:15
 
-**[VISUAL: Aerial shot of Mauritius — turquoise lagoon, sugarcane fields, the old colonial streets of Curepipe. Beautiful. Small. A world that could hold a boy — but not a dream.]**
+**[VISUAL: Mauritius. A Saturday afternoon. Lush, volcanic green. The warm light of a small living room. A father walks in carrying a stack of VHS tapes — movies piled to his chin, a ritual offering.]**
 
-**YOUNG DAMIEN (V.O.)**
-*(child's voice — wonder, not certainty)*
-I don't know what this is called yet.
-But I know I want it more than anything.
+**SIFU DAMIEN (V.O.)**
+My dad would come home every Saturday afternoon
+with a stack of VHS cassettes.
+Martial arts movies.
+Bruce Lee. Steven Seagal. Jean-Claude Van Damme.
 
-**[VISUAL: Montage — Young Damien at St Joseph College. A dojo room. Sensei Alain Uppiah demonstrates karate. Young Damien's first bow. His first punch. Getting it wrong. Getting it right. Sweat on a child's forehead.]**
+**[VISUAL: Young DAMIEN — 9 years old — positions himself on the floor in front of the television. His mother appears in the doorway, smiles, shakes her head. She knows what's coming.]**
 
-**[VISUAL: Time passes in the montage. The child grows taller. Six years of aikido. The soft throws. Learning to redirect force. Then kickboxing — gloves, the thud of a bag, the sting of a blocked shin kick.]**
+**SIFU DAMIEN (V.O.)**
+My mom would say —
+I would not move for a flight.
 
-**NARRATOR (V.O.)**
-Karate at eight. Six years of aikido.
-Kickboxing. Sweat and sacrifice on a small island
-where no one else was chasing the same dream.
+**[VISUAL: A plane passes overhead outside the window. Young Damien does not look up. Not once.]**
 
-**[VISUAL: Teenage Damien stands at the edge of a cliff overlooking the Indian Ocean. Wind in his hair. The horizon endless.]**
+**SIFU DAMIEN (V.O.)**
+I was glued to that screen.
+Stunned by the incredible moves of Bruce Lee.
+His fast strike.
+The speed.
+I thought — wow.
 
-**YOUNG DAMIEN (V.O.)**
-Everything I could learn here — I had learned.
-The ocean knew what I did not yet admit:
-*it was time to cross it.*
+**[VISUAL: Close-up of young Damien's eyes. In them: the reflection of Bruce Lee moving across the screen. Something ignites.]**
+
+**SIFU DAMIEN (V.O.)**
+I wanted to be like him.
+Not just to be an incredible martial artist.
+It was the way he moved. The speed.
+He was so inspirational.
+
+**[VISUAL: Young Damien stands up in the middle of the living room and throws his first attempt at a Bruce Lee strike. Clumsy. Enthusiastic. Perfect.]**
+
+**SIFU DAMIEN (V.O.)**
+I wanted to get the attention of everyone.
+I wanted to be the cool kid.
+
+**[VISUAL: A brief, honest beat — the young boy's real motivation. Not glory. Not destiny. Just wanting to matter. A smile crosses his face as he throws another punch at the air.]**
 
 ---
 
-### ACT TWO: THE CROSSING — 01:10–02:10
+### ACT TWO: THE IMPOSSIBLE DREAM — 01:15–02:00
 
-**[VISUAL: An airport. A one-way ticket. Young Damien — now early 20s — carries a single bag. He turns to look back at the island through the terminal window. Beat. He turns forward.]**
+**[VISUAL: Mauritius. A different day. Older now — a teenager. He stands at the window of a dojo watching older boys train. The instructor doesn't notice him. The island is beautiful. And small.]**
 
-**[SOUND: The rush of a plane lifting off. A shift in the music — it becomes more urban, more searching.]**
+**SIFU DAMIEN (V.O.)**
+Being from Mauritius and willing to be a great martial artist —
+I knew it was going to be impossible.
 
-**[VISUAL: Melbourne. The skyline. Trams. Rain on glass. The young man from Curepipe navigates a city that does not know him.]**
+**[VISUAL: Montage — the years of training on the island. Karate at age 8, St Joseph College. Then aikido. Kickboxing. The discipline accumulating. But the ceiling also becoming visible.]**
 
-**NARRATOR (V.O.)**
-He arrived in Australia with skill — but not mastery.
-With strength — but not purpose.
-What he found next would take everything he had.
+**SIFU DAMIEN (V.O.)**
+I needed to find a land of opportunities.
+A place where I could create something.
+Be where I wanted to be.
 
-**[VISUAL: A Wing Chun school. Simple. The sound of wooden dummy strikes. Sifu DAMIEN watches through a window before entering.]**
+**[VISUAL: Young Damien — now in his late teens — stands at the coastline. The Indian Ocean stretches to the horizon. The island at his back. The world ahead.]**
 
-**[VISUAL: His first Wing Chun lesson under MASTER JOE SAYAH. The forms are unlike anything he has trained before — efficient, structural, quiet. No wasted movement. Angles over aggression.]**
+**SIFU DAMIEN (V.O.)**
+I knew I needed to leave Mauritius.
+I worked so hard for it.
 
-**YOUNG DAMIEN (V.O.)**
-Wing Chun was designed by a woman.
-Ng Mui — a Shaolin nun who survived the burning of her temple
-by making herself *impossible to hit.*
-Not bigger. Not stronger.
-*Smarter.*
+**[VISUAL: A single shot — a passport. A one-way ticket. His parents at the airport. His mother's hands holding his face for a moment. Then letting go.]**
 
-**[VISUAL: The realisation hits him like a physical force. His eyes change.]**
-
-**YOUNG DAMIEN (V.O.)**
-I had been training to be stronger.
-Wing Chun asked me to be *wiser.*
+**SIFU DAMIEN (V.O.)**
+And I ended up in Australia.
 
 ---
 
-### ACT THREE: THE LINEAGE — 02:10–03:20
+### ACT THREE: THE GAP — 02:00–02:50
 
-**[VISUAL: A hall. A man enters — GRAND MASTER WILLIAM CHEUNG. Tall. Measured. Eyes that have seen decades of this art. He walks the same room where, long ago, he trained alongside a young Bruce Lee under Ip Man in Hong Kong.]**
-
-**NARRATOR (V.O.)**
-Ip Man.
-The last keeper of Wing Chun's original secrets.
-From him — two students who would change the world:
-Bruce Lee.
-And William Cheung.
-
-**[VISUAL: Sepia flashback — young William Cheung and young Bruce Lee training side by side in 1950s Hong Kong under the legendary Ip Man. Then — forward to Melbourne, where William Cheung has carried the lineage across an ocean.]**
-
-**NARRATOR (V.O.)**
-And from William Cheung — a boy from Mauritius.
-
-**[VISUAL: The training montage. Years pass. Not easy years. Not glamorous years. The wooden dummy. Chi Sao — sticky hands drilling, hours of tactile refinement. Corrections. Failure. Repetition. Refinement. Correction again.]**
+**[VISUAL: Melbourne. Day one. The city is vast and indifferent. A young man with a bag stands outside an immigration office. He looks up at the skyline — not with wonder, but with the reality check no dream prepares you for.]**
 
 **SIFU DAMIEN (V.O.)**
-*(now older — the man's voice)*
-People ask how long it takes to learn Wing Chun.
-I tell them: *ten years if you're committed.
-A lifetime if you're honest.*
+I came to Australia thinking —
+great. Land of opportunities. This is it.
+I'm going to be the greatest martial artist.
 
-**[VISUAL: Close-up of hands on the wooden dummy. Calloused. Certain. The same hands that once held a VHS tape case in a small living room in Curepipe.]**
+**[VISUAL: Time passes. A split-screen montage: the dream on one side — martial arts, training, glory. The reality on the other — office job, phone headset, keyboard. A call centre. The name badge reads: TELSTRA.]**
+
+**SIFU DAMIEN (V.O.)**
+The next couple of months I did so many different jobs.
+Ended up at Telstra.
+Ended up doing calls online.
+It was overwhelming.
+
+**[VISUAL: Young Damien at his desk in a call centre. Around him: noise, fluorescent lights, other people who also had dreams once. He stares at the blinking cursor on his screen.]**
+
+**SIFU DAMIEN (V.O.)**
+Because it still wasn't there.
+I just couldn't fulfil my dream.
+I had to find a way.
+I had to find my passion.
+
+**[VISUAL: He steps outside on his lunch break. The Melbourne sky. He closes his eyes. Breathes. His hands — the hands trained for years in Mauritius — hang still at his sides.]**
+
+**SIFU DAMIEN (V.O.)**
+Thank god my parents pushed me on my education.
+On my academics.
+Because that served me right.
+It built a network.
+People I met every day.
+
+**[VISUAL: A conversation — a handshake — a name on a piece of paper passed across a table. The network doing what networks do: connecting what cannot be found alone.]**
 
 ---
 
-### ACT FOUR: THE TITLE — 03:20–04:05
+### ACT FOUR: THE LINEAGE — 02:50–03:35
 
-**[VISUAL: A grading ceremony. Melbourne. December 2017. SIFU DAMIEN — now a man in his prime — performs the 10th Level Red Boat form before a panel of masters. Every movement a decade of sacrifice made visible.]**
-
-**[VISUAL: Grand Master William Cheung places a sash. Nods. A single, dignified acknowledgement from the man who studied under Ip Man.]**
-
-**NARRATOR (V.O.)**
-The first Mauritian in history.
-Certified Wing Chun instructor in the lineage of Ip Man.
-
-**[VISUAL: Sifu Damien stands alone in the dojo after the ceremony. He looks at his hands. Breathes.]**
+**[VISUAL: A door. Above it — a Wing Chun association emblem. Grand Master WILLIAM CHEUNG inside. A man whose name carries the weight of Ip Man, of Hong Kong, of Bruce Lee's own formation.]**
 
 **SIFU DAMIEN (V.O.)**
-I had done what I came to do.
-And then I understood —
-*it had never been about me.*
+And I got to find Grand Master William Cheung.
+The one who introduced Bruce Lee to kung fu.
 
-**[VISUAL: A stone plaque. The province of Henan, China. The Shaolin Temple complex. Words carved in stone. Among other names — Robert Downey Jr. William Cheung. And: DAMIEN CHAUREMOOTOO.]**
+**[VISUAL: Sifu Damien steps through the door. William Cheung turns. A moment of assessment — the old master reading the young man in front of him.]**
 
-**[VISUAL: Close-up of his name in the stone. The camera pulls back slowly to reveal the full scale of the Shaolin Temple behind it.]**
+**SIFU DAMIEN (V.O.)**
+I was like — oh my god.
+There we go.
+We're getting somewhere.
 
-**NARRATOR (V.O.)**
-His name, in stone, at the Shaolin Temple.
-A boy from Curepipe.
-Engraved beside masters and legends.
-Because the art found the right person to carry it.
+**[VISUAL: Training. The years compressed into a montage — but not glamorous years. Real ones. The wooden dummy at 6am. Chi Sao until the hands ache. Corrections. Failure. The same movement a thousand times. Two thousand. The body learning what the mind already decided.]**
+
+**SIFU DAMIEN (V.O.)**
+Through all this hard work —
+I finally found my path.
+And this is where my journey into martial arts
+became stronger.
+
+**[VISUAL: Close-up — Sifu Damien's eyes during training. The same eyes that watched Bruce Lee on a VHS tape in Curepipe. Now they hold something different. Not wonder. Certainty.]**
+
+**SIFU DAMIEN (V.O.)**
+I felt like — okay.
+I'm going to be working with Grand Master William Cheung
+every day.
+This is finally it.
+This is the moment I was waiting for.
 
 ---
 
-### ACT FIVE: THE CALLING — 04:05–05:00
+### ACT FIVE: THE PLAQUE — 03:35–04:10
 
-**[VISUAL: Melbourne. A dojo — Empower Tactical. Different from the places he trained. Brighter. A woman in her 30s practising a wrist escape. A child learning to stand tall. A young man who never believed in himself throwing a clean, perfect technique for the first time.]**
-
-**[VISUAL: Sifu Damien moves through the room — adjusting, teaching, watching with the eyes of someone who has seen what a human being can become.]**
+**[VISUAL: China. The province of Henan. The Shaolin Temple complex. Sifu Damien stands before a stone plaque. The camera holds on his face as he reads it.]**
 
 **SIFU DAMIEN (V.O.)**
-My passion is not to make fighters.
-It is to eliminate self-doubt.
-To turn hopelessness into hopefulness.
-To give every person who walks through that door
-the thing my father gave me one night in Curepipe —
-*a glimpse of what they could become.*
+I was privileged enough
+to have my name engraved at the Shaolin Temple.
+In China.
 
-**[VISUAL: Montage — the students of Empower Tactical. Women empowered. Children standing straighter. Men finding discipline. A community forged in shared effort.]**
-
-**[VISUAL: Sifu Damien and his team — including EMMA CARR — teaching side by side. This is not a solo journey anymore. This is a lineage being built in real time.]**
+**[VISUAL: The plaque. Names carved in stone. William Cheung. Robert Downey Jr. And — DAMIEN CHAUREMOOTOO. A boy from Curepipe. In stone. At the birthplace of kung fu.]**
 
 **SIFU DAMIEN (V.O.)**
-Wing Chun was born when a woman had to survive
-the burning of everything she knew.
-It survived because someone chose to carry it forward.
+It was such a big honour.
+Such a big honour.
+I thought — wow.
 
-**[VISUAL: Final shot. Sifu Damien stands at the front of the dojo. Students bow. He bows back. The camera pulls slowly upward through the ceiling — out over Melbourne — and keeps rising, all the way back to the Indian Ocean — to a small island in the sun.]**
+**[VISUAL: A beat of pure stillness. The achievement landing. Wind through the temple courtyard. Ancient trees. His name in the stone.]**
 
 **SIFU DAMIEN (V.O.)**
-Mauritius gave me the dream.
-Australia gave me the lineage.
-My students give me the reason.
+I made it.
 
-**[VISUAL: The frame freezes — Sifu Damien mid-bow. Then transitions to ink-brush anime style still — the way origin stories are commemorated in the great martial arts anime. His image rendered as a master, a warrior, a teacher.]**
+**[VISUAL: HARD CUT. Melbourne. An ordinary kitchen. Sifu Damien sits at a table alone. The Shaolin trip is over. The house is quiet.]**
 
-**[TEXT ON SCREEN — white on black, clean:]**
+**SIFU DAMIEN (V.O.)**
+Upon my return from the Shaolin Temple —
+I remember coming back thinking...
+*now what?*
+
+**[VISUAL: Silence. The most dramatic beat in the film. Not failure. Not loss. Something harder — the emptiness that comes when the dream you sacrificed everything for finally arrives. And it's not enough.]**
+
+**SIFU DAMIEN (V.O.)**
+I realised that there was something missing.
+
+---
+
+### ACT SIX: THE REASON — 04:10–04:45
+
+**[VISUAL: Two boys — his sons — run into the frame and crash into him at the kitchen table. He catches them both. His face changes completely. This is the answer.]**
+
+**SIFU DAMIEN (V.O.)**
+I realised that I wanted to be a role model.
+I wanted to leave a legacy.
+Like Bruce Lee did.
+
+**[VISUAL: A memory — young Damien on the floor in Mauritius, watching the screen, his father behind him. Now the positions are reversed. Sifu Damien. His boys. The same awe in their eyes.]**
+
+**SIFU DAMIEN (V.O.)**
+I want to do this for my kids.
+I want to do this for my boys.
+I want them to look at all the time
+that dad was working — training so hard — teaching.
+And feel like:
+all the sacrifice led somewhere.
+
+**[VISUAL: A woman — his partner — watches from across the room. She nods. She has built her own life empowering others. She knows exactly what this moment means.]**
+
+**SIFU DAMIEN (V.O.)**
+Believing in people.
+Creating a different strategy for people to learn.
+To believe in themselves.
+To be empowered.
+
+**[VISUAL: The doors of EMPOWER TACTICAL open. Melbourne. Morning light floods in.]**
+
+---
+
+### ACT SEVEN: THE ROCKET — 04:45–05:00
+
+**[VISUAL: Empower Tactical, alive with students. A woman executing a wrist escape for the first time — eyes wide with realisation. A man pushing past a fear he's carried for years. A child standing taller than they ever have.]**
+
+**SIFU DAMIEN (V.O.)**
+Think of it like a rocket going to space.
+The boosters around it — they help it.
+They give it everything.
+And then they fall away —
+so the rocket can make it.
+
+**[VISUAL: Abstract anime sequence — a rocket rising. Around it, glowing boosters: the VHS tapes, the island, the call centre, William Cheung, the Shaolin Temple plaque. One by one they release and fall. The rocket keeps climbing.]**
+
+**SIFU DAMIEN (V.O.)**
+Every martial arts school.
+Every job I did.
+Every person I met.
+Telstra. The networking. Grand Master Cheung.
+All of it was there for a reason.
+All of it shaped me.
+
+**[VISUAL: Back to the dojo. Sifu Damien moves through the room — adjusting a student's stance here, a word of encouragement there. Richard Norton watching from the side, nodding. This is the work.]**
+
+**SIFU DAMIEN (V.O.)**
+I want Empower Tactical to be the land of opportunities.
+For everyone that's dreaming.
+For everyone with a vision.
+For everyone who wants to be someone.
+
+**[VISUAL: Final frame — Sifu Damien turns to camera. Not performing. Just present. The same eyes. The same person who sat on the floor in Mauritius and couldn't look away from the screen.]**
+
+**SIFU DAMIEN (V.O.)**
+I will continue to do my very best —
+to empower people.
+Especially those that don't believe in themselves.
+
+**[VISUAL: The frame holds — then transitions slowly to ink-brush anime still. Sifu Damien rendered as the master, the father, the teacher. Not a fighter. A builder.]**
+
+**[TEXT ON SCREEN — clean, white on black:]**
 
 ```
 SIFU DAMIEN CHAUREMOOTOO
-Wing Chun Instructor — Lineage of Ip Man
+Wing Chun — Lineage of Ip Man via Grand Master William Cheung
 Founder, Empower Tactical Melbourne
-First Mauritian Wing Chun Master
 
-"To reach your own limits — then break them."
+"I will continue to do my very best to empower people —
+especially those that don't believe in themselves."
 
 EMPOWER TACTICAL
-Melbourne, Australia
 empowertactical.com
 ```
 
-**[MUSIC: Fades to silence. Then — a single sound. The same ocean waves from the cold open.]**
+**[MUSIC: Resolves to silence. Then — one sound. The click of a VHS tape loading.]**
 
 **[FADE TO BLACK.]**
 
@@ -269,31 +350,36 @@ empowertactical.com
 
 ## PRODUCTION NOTES
 
-### Visual Style Reference
-- **Primary inspiration**: *Demon Slayer: Kimetsu no Yaiba* — ink-brush flashback sequences, emotional close-ups, colour palette shifts between eras
-- **Secondary**: *Vinland Saga* origin flashbacks — sparse but emotionally devastating
+### Visual Style
+- **Aesthetic**: *Demon Slayer* memory sequences + *Vinland Saga* grit for the call-centre years
 - **Colour palette**:
-  - Mauritius childhood: warm golds, ocean blues, VHS-tape warmth
-  - Melbourne early years: cool blues, steel greys, searching
-  - Training under Cheung: deep purples and blacks — the intensity of craft
-  - Empower Tactical present: warm reds and whites — vitality, community, life
+  - Mauritius / childhood: warm gold, ocean turquoise, VHS-tape amber
+  - Melbourne / struggle: steel blue, fluorescent white — cold and searching
+  - Wing Chun training: deep charcoal and red — intensity, discipline
+  - Empower Tactical present: warm white and sunrise orange — vitality, community
+- **The rocket sequence** (04:45): full abstract anime — Sifu Damien's own metaphor rendered as the visual centrepiece
 
-### Voice Direction (Sifu Damien's narration)
-- Calm. Unhurried. The voice of someone who has nothing left to prove.
-- The child's voice (flashbacks): wonder first, then determination — never fear
-- No melodrama. Truth is enough.
+### Narration Direction
+- Sifu Damien's actual voice throughout. No actor. No imitation.
+- His phrasing preserved exactly — the grammar, the rhythm, the Mauritian-Australian cadence *is* the character
+- Quiet. Unhurried. A man with nothing left to prove.
+
+### Testimonial Integration (optional extended cut)
+The following real voices can be woven into an extended 8-minute version:
+- **Richard Norton** (martial artist / fight coordinator): *"Nothing's a problem. We always go forward."*
+- **Chris Palovanis** (CEO, Football Victoria): The sauna story — fear conquered through mindset
+- **Dan Deltondo**: *"Damien's first answer is: of course we can do it. Let's work out how."*
+- **His partner**: *"I inspire and empower women all over the world — and Sifu Damien inspires and empowers me every single day."*
 
 ### Music
-- Act 1–2: Acoustic guitar + light percussion (island to city transition)
-- Act 3: Building orchestral tension (lineage revelation, training years)
-- Act 4: Quiet piano solo (the grading, the plaque — earned silence)
-- Act 5: Full orchestral + choir swell, resolving to solo piano for final monologue
-
-### Runtime: 5:00 exact
-### Format: 16:9, 4K, anime illustrated/animated hybrid
+- Act 1 (Mauritius): Acoustic guitar, warm and nostalgic
+- Act 2–3 (leaving / struggle): Sparse piano, searching
+- Act 4 (William Cheung): Building strings — arrival
+- Act 5 (Shaolin / Now what): Solo cello — peak, then emptiness
+- Act 6–7 (legacy / rocket): Full orchestral swell into quiet resolution
 
 ---
 
 *Script prepared for Empower Tactical Melbourne*
-*Based on publicly documented life and work of Sifu Damien Chauremootoo*
-*Forever Chapter Format — MIG Pacific Production Framework*
+*Based on Sifu Damien Chauremootoo's own words — Facebook video, May 2026*
+*Forever Chapter Format*
